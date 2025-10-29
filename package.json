@@ -1,0 +1,38 @@
+{
+  "name": "postgres_proj_udacity",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "adam-alAj <adam1alafandi1@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.4",
+    "@types/jasmine": "^5.1.12",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^24.9.1",
+    "@types/supertest": "^6.0.3",
+    "jasmine": "^5.12.0",
+    "node-pg-migrate": "^8.0.3",
+    "nodemon": "^3.1.10",
+    "supertest": "^7.1.4",
+    "ts-node": "^10.9.2",
+    "tsc-watch": "^7.2.0",
+    "typescript": "^5.9.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc-watch --onSuccess \"node ./dist/server.js\"",
+    "start:dev": "tsc-watch --onSuccess \"node ./dist/server.js\"",
+    "start": "node ./dist/server.js",
+    "test": "ts-node node_modules/jasmine/bin/jasmine --config=jasmine.json"
+  }
+}
