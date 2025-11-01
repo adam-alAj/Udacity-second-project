@@ -1,0 +1,20 @@
+{
+    "defaultEnv": "dev",
+    "dev": {
+        "driver": "postgres",
+        "host": "127.0.0.1",
+        "port": "5432",
+        "user": "store_user",
+        "password": "store_pass",
+        "database": "store_dev",
+        "schema": "public",
+        "ssl": false
+    },
+    "test": {
+        "driver": "postgres",
+        "host": "127.0.0.1",
+        "database": "store_tests",
+        "user": "store_user",
+        "password": "store_pass"
+    }
+}
